@@ -88,10 +88,10 @@ def visualize_binvox_side_by_side(binvox_data1, binvox_data2):
 
 if __name__ == '__main__':
 
-    with open('models/model.binvox', 'rb') as f:
+    with open('models/model(1).binvox', 'rb') as f:
         m1 = binvox_rw.read_as_3d_array(f)
 
-    with open('models/model(1).binvox', 'rb') as f:
+    with open('models/model(2).binvox', 'rb') as f:
         m2 = binvox_rw.read_as_3d_array(f)
     
     visualize_binvox_side_by_side(m1.data, m2.data)
